@@ -36,7 +36,8 @@ body {
     position: relative;
     grid-column: span 4;
     height: 100px;
-    width: 100%;
+    left: 10px;
+    width: calc(100% - 20px);
     border: none;
     outline: none;
     background: #a7af7c;
@@ -93,12 +94,28 @@ body {
 
 .calculator .clear {
     grid-column: span 2;
-    width: 182px;
+    width: 180px;
     background: #f00;
 }
 
 .calculator .clear::before {
     background: linear-gradient(90deg,#d20000,#ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+
+.calculator .plus {
+    grid-row: span 2;
+    height: 180px;
+}
+
+.calculator .equal {
+    background: #2196f3;
+}
+
+.calculator .equal::before {
+    background: linear-gradient(90deg,#1479cd,#ffffff5c);
     border-left: 1px solid #fff4;
     border-bottom: 1px solid #fff4;
     border-top: 1px solid #fff4;
